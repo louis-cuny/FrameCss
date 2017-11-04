@@ -1,0 +1,69 @@
+@mixin button($bc: $color, $sf: 1) { //color and size-factor
+  background-color: $bc;
+  font-size: $sf * 1em;
+  padding: $sf * 6px $sf * 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 2px #999;
+  margin: 10px;
+  &:hover {
+    background-color: darken($bc, 5%);
+  }
+  &:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+  }
+}
+
+.btn, button {
+  @include button();
+}
+
+.btn-lg {
+  @include button($sf: 1.2);
+}
+
+.btn-sm {
+  @include button($sf: 0.8);
+}
+
+.btn-succes {
+  @include button($color-succes);
+}
+
+.btn-danger {
+  @include button($color-danger);
+}
+
+.btn-info {
+  @include button($color-info);
+}
+
+.btn-xl {
+  @include button();
+  width: 100%;
+}
+
+.btn-fancy {
+  @include button();
+  -webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
+  -o-transition-property: width, height, -o-transform, background, font-size, opacity, color;
+  -o-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s, 1s;
+  -moz-transition-property: width, height, -moz-transform, background, font-size, opacity, color;
+  -moz-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s, 1s;
+  transition-property: width, height, transform, background, font-size, opacity;
+  transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+
+  &:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+

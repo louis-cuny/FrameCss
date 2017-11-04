@@ -1,0 +1,130 @@
+body {
+  font-family: 'Anaheim', sans-serif, 'Arial';
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+small {
+  font-size: smaller;
+  color: #998899;
+}
+
+i, em {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+u, abbr, ins {
+  text-decoration: underline;
+}
+
+mark {
+  background-color: #CCCfff;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+li {
+  display: list-item;
+}
+
+blockquote, code, pre, kbd {
+  background-color: #ADF;
+  border: 1px solid $color;
+  border-left: 4px solid $color;
+  border-radius: 2px;
+}
+
+.table {
+  border-radius: 2px;
+  border: 1px solid $color;
+
+}
+
+.table th {
+  border-bottom: 1px solid $color;;
+}
+
+table td, table th {
+  padding: 4px;
+}
+
+.fullborder td, .fullborder th {
+  border: 1px solid $color;
+
+}
+
+.table th {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.altline tr:nth-child(2n-1), .table tr:hover {
+  background-color: #cccfff;
+}

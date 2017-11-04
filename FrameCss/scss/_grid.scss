@@ -1,0 +1,39 @@
+.body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.container {
+  box-sizing: border-box;
+  flex-basis: 90%;
+  width:80%;
+  margin: 0 auto;
+}
+
+@for $i from 1 through $nbcolumns {
+  .col#{$i}
+{
+  box-sizing: border-box;
+  padding: 1rem;
+  flex-basis: 100%;
+    @media (min-width: 700px) {
+      flex-basis: percentage($i/12);
+    }
+}
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  & p {
+    padding: 0.5em;
+    background-color: #AAAAAA;
+    border-radius: 2px;
+    height:100%;
+  }
+}

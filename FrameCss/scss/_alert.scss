@@ -1,0 +1,22 @@
+@mixin alert($c: $color) {
+  width: 100%;
+  border-radius: 2px;
+  padding: 5px;
+  background-color: $c;
+}
+
+.alert {
+  @include alert();
+}
+
+.alert-danger {
+  @include alert($color-danger);
+}
+
+.alert-info {
+  @include alert($color-info);
+}
+
+.alert-succes {
+  @include alert($color-succes);
+}

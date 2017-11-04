@@ -1,0 +1,53 @@
+ul.navbar, ul.breadcrum, ul.pagination{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navbar li > * {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar li a:hover:not(.active):not(  .disabled) {
+  background-color: #111;
+}
+
+.navbar .active {
+  background-color: $color;
+}
+
+.navbar .disabled {
+  background-color: #CCC;
+}
+
+.breadcrum li > *:before {
+  content: '> ';
+}
+
+.breadcrum li > * {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 5px 5px;
+  margin: 0;
+  display: inline-block;
+}
+
+.pagination li > * {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 4px 5px;
+  margin: 0;
+  display: inline-block;
+}
